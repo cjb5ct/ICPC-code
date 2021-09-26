@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/CJ/CLionProjects/Balltest/ball.cpp
+ball.h
+C:/Users/CJ/CLionProjects/Balltest/ball.h
+cmath
+-
+
+C:/Users/CJ/CLionProjects/Balltest/ball.h
+
+C:/Users/CJ/CLionProjects/Balltest/ballmanager.cpp
+ballmanager.h
+C:/Users/CJ/CLionProjects/Balltest/ballmanager.h
+ballmanager.h
+C:/Users/CJ/CLionProjects/Balltest/ballmanager.h
+iostream
+-
+fstream
+-
+sstream
+-
+algorithm
+-
+chrono
+-
+
+C:/Users/CJ/CLionProjects/Balltest/ballmanager.h
+ball.h
+C:/Users/CJ/CLionProjects/Balltest/ball.h
+string
+-
+vector
+-
+
+C:/Users/CJ/CLionProjects/Balltest/main.cpp
+ballmanager.h
+C:/Users/CJ/CLionProjects/Balltest/ballmanager.h
+iostream
+-
+

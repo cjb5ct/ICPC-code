@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/CJ/CLionProjects/SchedulingAttemp2/main.cpp
+iostream
+-
+vector
+-
+unordered_map
+-
+map
+-
+algorithm
+-
+queue
+-
+

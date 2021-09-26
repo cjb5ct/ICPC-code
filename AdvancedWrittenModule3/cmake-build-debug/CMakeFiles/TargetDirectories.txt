@@ -1,0 +1,3 @@
+C:/Users/CJ/CLionProjects/AdvancedWrittenModule3/cmake-build-debug/CMakeFiles/AdvancedWrittenModule3.dir
+C:/Users/CJ/CLionProjects/AdvancedWrittenModule3/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/CJ/CLionProjects/AdvancedWrittenModule3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

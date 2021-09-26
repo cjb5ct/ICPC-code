@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/CJ/CLionProjects/Trading/main.cpp
+starTools.h
+C:/Users/CJ/CLionProjects/Trading/starTools.h
+starTools.cpp
+C:/Users/CJ/CLionProjects/Trading/starTools.cpp
+iostream
+-
+vector
+-
+cmath
+-
+
+C:/Users/CJ/CLionProjects/Trading/starTools.cpp
+starTools.h
+C:/Users/CJ/CLionProjects/Trading/starTools.h
+
+C:/Users/CJ/CLionProjects/Trading/starTools.h
+vector
+-
+cmath
+-
+

@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/CJ/CLionProjects/Wiring/electric.h
+iostream
+-
+cmath
+-
+vector
+-
+unordered_map
+-
+
+C:/Users/CJ/CLionProjects/Wiring/findUnion.h
+iostream
+-
+electric.h
+C:/Users/CJ/CLionProjects/Wiring/electric.h
+vector
+-
+
+C:/Users/CJ/CLionProjects/Wiring/main.cpp
+iostream
+-
+electric.h
+C:/Users/CJ/CLionProjects/Wiring/electric.h
+unordered_map
+-
+findUnion.h
+C:/Users/CJ/CLionProjects/Wiring/findUnion.h
+queue
+-
+algorithm
+-
+map
+-
+

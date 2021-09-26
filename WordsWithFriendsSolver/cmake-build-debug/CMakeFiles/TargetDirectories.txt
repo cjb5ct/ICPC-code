@@ -1,0 +1,3 @@
+C:/Users/CJ/CLionProjects/WordsWithFriendsSolver/cmake-build-debug/CMakeFiles/WordsWithFriendsSolver.dir
+C:/Users/CJ/CLionProjects/WordsWithFriendsSolver/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/CJ/CLionProjects/WordsWithFriendsSolver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
