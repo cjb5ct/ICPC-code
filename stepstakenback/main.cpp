@@ -30,16 +30,31 @@ int main() {
         else {
 
 
-            // find the first position of unsorted students in line and make that the first student to check
-            int temp1 = student_heights[0];
-            int temp2;
-           // int current_student;
+            // make another sorted array to delete from
+
+/*
+           deque<int> sorted_delete = sorted;
+           for (int i=0;i<student_heights.size();i++) {
+               if (student_heights[i] == sorted[i]){
+                   sorted_delete.erase(sorted_delete.begin() + i);
+               }
+               else {
+
+               }
+
+           }
+*/
+           /*
             int first_pos;
             for (int a = 1;a<student_heights.size();a++) {
                 temp2 = student_heights[a];
                 if (temp1 < temp2) {
                     // increment 1 up the list
+                    auto it = find(sorted.begin(),sorted.end(),temp1);
+                    sorted.erase(it);
                     temp1 = temp2;
+
+
                 }
                 else {
                     // make the first student the first instance of unordered
@@ -49,36 +64,92 @@ int main() {
                     break;
                 }
             }
+
+            */
+
+
+
+
             int current_student;
+            int current_spot;
+           // deque<int> sorted_delete = sorted;
+            deque<int> current_copy = student_heights;
+            int count = 0;
+            for (int stud: current_copy) {
+                current_student = stud;
+               // cout << "cs: " << current_student << " ";
 
-            for (int i=first_pos;i<20;i++) {
-                current_student = student_heights[i];
 
+
+                count++;
+               // cout << "cs: " << current_spot << " ";
+                auto it = find(student_heights.begin(),student_heights.end(), current_student);
+
+                current_spot = it - student_heights.begin();
+               // int pos_cur_stud =
                 // take the student out of line
-                student_heights.erase(student_heights.begin()+i);
+               // student_heights.erase(student_heights.begin()+i);
+
+                student_heights.erase(it);
 
                 // compare the students height to the rest of the line
                 // find the first person that is taller than them and put the student in front of then, add the numebr of steps
                 // if the person is the tallest then put them in the back and add no steps
                 bool tallest = true;
-                for (int x=0;x<20;x++) {
+                for (int x=0;x<19;x++) {
                     if (current_student <= student_heights[x]) {
                         student_heights.insert(student_heights.begin()+x,current_student);
-                        //cout << x << " ";
-                        step_count += 20 - (x+1);
+                        // if they are in the same spot we don't want to add any steps
+
+                        //cout << current_spot << " == " << x << endl;
+                        if (current_spot == x) {
+                            // same spot, don't add any steps
+
+                        }
+                        else {
+                           // cout << "x: " << x << " ";
+                            // changed spot add steps
+                            cout << 20 - (x+1) << " ";
+                            step_count += 20 - (x+1);
+                        }
+
+
+
                         tallest = false;
                         break;
                     }
 
                 }
+
+
                 if (tallest) {
                     // put the student in the back, don't add any steps
                     student_heights.push_back(current_student);
-                }
 
+                }
+                //cout << tallest << " ";
+
+                /*
+                cout << "after: " << endl;
+                for (int ele: student_heights) {
+                    cout << ele << " ";
+                }
+                cout << endl;
+*/
+
+
+                //sorted_delete.erase(sorted_delete.begin());
+
+                /*
+                if (student_heights == sorted) {
+                    break;
+                }
+                 */
 
 
             }
+            cout << endl;
+
 
 
 
@@ -108,11 +179,8 @@ int main() {
 
         step_count = 0;
 
-
-
-
-
         student_heights.clear();
+        sorted.clear();
         sets--;
 
     }

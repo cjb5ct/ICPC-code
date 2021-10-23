@@ -1,0 +1,3 @@
+C:/Users/CJ/CLionProjects/heightsattempt2/cmake-build-debug/CMakeFiles/heightsattempt2.dir
+C:/Users/CJ/CLionProjects/heightsattempt2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/CJ/CLionProjects/heightsattempt2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
